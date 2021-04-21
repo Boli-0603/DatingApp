@@ -1,0 +1,5 @@
+{
+    "terminal.integrated.enableBell": true,
+    "csharpextensions.privateMemberPrefix": "_",
+    "csharpextensions.useThisForCtorAssignments": false
+}
