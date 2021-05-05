@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using API.Data;
-using API.Extension;
+using API.Extensions;
 using API.Interfaces;
 using API.Middleware;
 using API.Services;
@@ -52,8 +52,7 @@ namespace API
             app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200"));
 
             app.UseAuthentication();
-
-            app.UseAuthorization();   //Order is important
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

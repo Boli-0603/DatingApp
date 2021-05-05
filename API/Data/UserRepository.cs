@@ -35,11 +35,6 @@ namespace API.Data
                 .ToListAsync();
         }
 
-        public Task<IEnumerable<AppUser>> GetUserAsync()
-        {
-            throw new System.NotImplementedException();
-        }
-
         public async Task<AppUser> GetUserByIdAsync(int id)
         {
             return await _context.Users.FindAsync(id);
